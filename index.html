@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bubbles App Manager is a private, on-device Android app manager and device status dashboard.">
+  <meta name="description" content="Bubbles App Manager is a private Android device-care dashboard with a no-setup Standard Mode and an optional Shizuku-powered Advanced Mode.">
   <meta name="theme-color" content="#15111d">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
   <link rel="canonical" href="https://kernferm.github.io/BubblesAppManager/">
@@ -19,6 +19,7 @@
     </a>
     <nav aria-label="Primary navigation">
       <a aria-current="page" href="./">Overview</a>
+      <a href="#modes">Modes</a>
       <a href="privacy.html">Privacy</a>
       <a href="data-safety.html">Data safety</a>
       <a href="support.html">Support</a>
@@ -28,12 +29,12 @@
   <main id="main">
     <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow">Private by design · Android 10+</p>
+        <p class="eyebrow">Private by design &middot; Android 10+</p>
         <h1>Clear device insights.<br><span>Nothing leaves your phone.</span></h1>
-        <p class="lede">Bubbles App Manager brings app management, honest device-wide measurements, safe storage review, and useful widgets together without ads, accounts, analytics, or tracking.</p>
+        <p class="lede">Bubbles App Manager brings app management, honest device-wide measurements, safe storage review, and useful widgets together. Start with no-setup Standard Mode, or explicitly connect the official Shizuku manager for verified Advanced Mode capabilities.</p>
         <div class="hero-actions">
           <a class="button primary" href="https://github.com/KernFerm/BubblesAppManager">View on GitHub</a>
-          <a class="button secondary" href="privacy.html">Read the privacy policy</a>
+          <a class="button secondary" href="#modes">Compare modes</a>
         </div>
         <ul class="trust-list" aria-label="Privacy highlights">
           <li>No network permission</li>
@@ -42,7 +43,7 @@
         </ul>
       </div>
       <div class="device-card" aria-label="Illustration of Bubbles device status">
-        <div class="device-top"><span>Device care</span><span class="status-dot">Local</span></div>
+        <div class="device-top"><span>Device care</span><span class="status-dot">Advanced ready</span></div>
         <div class="score-orbit"><span>Good</span></div>
         <div class="metric"><span>Memory</span><strong>3.4 GB available</strong><i class="value-54"></i></div>
         <div class="metric"><span>Storage</span><strong>63.8 GB available</strong><i class="value-40"></i></div>
@@ -55,8 +56,45 @@
       <div class="shell narrow">
         <p class="eyebrow">Honest by default</p>
         <h2>Android stays in control of protected actions.</h2>
-        <p>Bubbles never pretends it can silently force-stop or uninstall another app. It takes you to the selected app’s Android-owned settings or confirmation screen, where you stay in control.</p>
+        <p>Bubbles never pretends it completed an operation Android did not permit. Standard Mode uses documented Android APIs and Android-owned confirmation screens. Advanced Mode exposes only capabilities that are connected, authorized, and verified on the current device.</p>
       </div>
+    </section>
+
+    <section class="shell section" id="modes" aria-labelledby="modes-title">
+      <div class="section-heading">
+        <p class="eyebrow">Choose your level of access</p>
+        <h2 id="modes-title">Useful by default. More capable by choice.</h2>
+        <p class="lede">Both modes keep Bubbles&rsquo; records on the device. Advanced Mode is optional and never prevents Standard Mode from working.</p>
+      </div>
+      <div class="mode-grid">
+        <article class="mode-card">
+          <span class="mode-label">Default</span>
+          <h3>Standard Mode</h3>
+          <p>Works immediately without root, Shizuku, a computer, or additional setup.</p>
+          <ul>
+            <li>Device-wide RAM, storage, battery, thermal, and uptime readings</li>
+            <li>Application search, inspection, launch, and uninstall requests</li>
+            <li>Safe storage review, local history, monitoring, and widgets</li>
+            <li>Android-owned App info navigation for protected actions</li>
+          </ul>
+        </article>
+        <article class="mode-card advanced">
+          <span class="mode-label">Optional</span>
+          <h3>Advanced Mode</h3>
+          <p>Connects to the separately installed official Shizuku manager after you explicitly authorize Bubbles.</p>
+          <ul>
+            <li>Detects service installation, startup, authorization, and disconnection</li>
+            <li>Shows the service identity and operation-specific capability status</li>
+            <li>Offers official install, open, setup, and authorization handoffs</li>
+            <li>Keeps unsupported force-stop or cross-app termination actions disabled</li>
+          </ul>
+          <div class="mode-actions">
+            <a class="button primary" href="https://shizuku.rikka.app/download/">Get official Shizuku</a>
+            <a class="button secondary" href="https://shizuku.rikka.app/guide/setup/">Setup guide</a>
+          </div>
+        </article>
+      </div>
+      <p class="mode-note"><strong>Separate by design:</strong> Bubbles uses the official Shizuku API but does not bundle, silently install, modify, or impersonate the Shizuku app. Non-root Shizuku service startup may need to be repeated after a device reboot.</p>
     </section>
 
     <section class="shell section" aria-labelledby="features-title">
@@ -67,7 +105,7 @@
       <div class="feature-grid">
         <article><span class="feature-number">01</span><h3>App manager</h3><p>Search, filter, sort, favorite, inspect, launch, or request uninstall for applications Android permits Bubbles to discover.</p></article>
         <article><span class="feature-number">02</span><h3>Device status</h3><p>Review real device-wide memory, storage, battery, power-saver, uptime, and thermal information.</p></article>
-        <article><span class="feature-number">03</span><h3>Memory care</h3><p>Clear only Bubbles-owned temporary files and compare real before-and-after system readings—never fabricated reclaimed memory.</p></article>
+        <article><span class="feature-number">03</span><h3>Memory care</h3><p>Clear only Bubbles-owned temporary files and compare real before-and-after system readings&mdash;never fabricated reclaimed memory.</p></article>
         <article><span class="feature-number">04</span><h3>Safe storage review</h3><p>Choose a folder through Android, review large, old, or byte-identical duplicate candidates, then select and confirm every deletion.</p></article>
         <article><span class="feature-number">05</span><h3>Home-screen widgets</h3><p>Keep device-wide RAM, storage, and battery information close with responsive small, medium, and large widgets.</p></article>
         <article><span class="feature-number">06</span><h3>Optional monitoring</h3><p>Store a small, bounded history locally or keep an ongoing, visible device-status notification that you can stop at any time.</p></article>
@@ -84,7 +122,7 @@
           <p><strong>Zero runtime transmission.</strong> Bubbles has no Internet permission or remote application inventory.</p>
           <p><strong>Deliberate local retention.</strong> Optional history is bounded and deletable. Operational history is excluded from backup.</p>
           <p><strong>Progressive access.</strong> Optional notifications are requested only when needed. Storage access begins only after you choose a folder.</p>
-          <p><strong>No hidden control.</strong> No root access, accessibility automation, hidden APIs, silent uninstall, or broad all-files permission.</p>
+          <p><strong>No hidden control.</strong> Standard Mode requests no root access. Advanced Mode requires your explicit authorization through the separate official Shizuku manager; Bubbles does not use accessibility automation, hidden APIs, silent uninstall, or broad all-files permission.</p>
         </div>
       </div>
     </section>
