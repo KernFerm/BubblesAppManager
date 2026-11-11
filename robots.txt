@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kernferm.github.io/BubblesAppManager/sitemap.xml

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bubbles App Manager is a private, on-device Android app manager and device status dashboard.">
+  <meta name="theme-color" content="#15111d">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="canonical" href="https://kernferm.github.io/BubblesAppManager/">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bubbles App Manager</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Bubbles App Manager home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Bubbles</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a aria-current="page" href="./">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="data-safety.html">Data safety</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Private by design · Android 10+</p>
+        <h1>Clear device insights.<br><span>Nothing leaves your phone.</span></h1>
+        <p class="lede">Bubbles App Manager brings app management, honest device-wide measurements, safe storage review, and useful widgets together without ads, accounts, analytics, or tracking.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/KernFerm/BubblesAppManager">View on GitHub</a>
+          <a class="button secondary" href="privacy.html">Read the privacy policy</a>
+        </div>
+        <ul class="trust-list" aria-label="Privacy highlights">
+          <li>No network permission</li>
+          <li>No analytics or ads</li>
+          <li>No account required</li>
+        </ul>
+      </div>
+      <div class="device-card" aria-label="Illustration of Bubbles device status">
+        <div class="device-top"><span>Device care</span><span class="status-dot">Local</span></div>
+        <div class="score-orbit"><span>Good</span></div>
+        <div class="metric"><span>Memory</span><strong>3.4 GB available</strong><i class="value-54"></i></div>
+        <div class="metric"><span>Storage</span><strong>63.8 GB available</strong><i class="value-40"></i></div>
+        <div class="metric-row"><span>Battery</span><strong>100% charging</strong></div>
+        <p>Real system-wide readings using public Android APIs.</p>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="shell narrow">
+        <p class="eyebrow">Honest by default</p>
+        <h2>Android stays in control of protected actions.</h2>
+        <p>Bubbles never pretends it can silently force-stop or uninstall another app. It takes you to the selected app’s Android-owned settings or confirmation screen, where you stay in control.</p>
+      </div>
+    </section>
+
+    <section class="shell section" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">What Bubbles does</p>
+        <h2 id="features-title">Useful care without inflated claims</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span class="feature-number">01</span><h3>App manager</h3><p>Search, filter, sort, favorite, inspect, launch, or request uninstall for applications Android permits Bubbles to discover.</p></article>
+        <article><span class="feature-number">02</span><h3>Device status</h3><p>Review real device-wide memory, storage, battery, power-saver, uptime, and thermal information.</p></article>
+        <article><span class="feature-number">03</span><h3>Memory care</h3><p>Clear only Bubbles-owned temporary files and compare real before-and-after system readings—never fabricated reclaimed memory.</p></article>
+        <article><span class="feature-number">04</span><h3>Safe storage review</h3><p>Choose a folder through Android, review large, old, or byte-identical duplicate candidates, then select and confirm every deletion.</p></article>
+        <article><span class="feature-number">05</span><h3>Home-screen widgets</h3><p>Keep device-wide RAM, storage, and battery information close with responsive small, medium, and large widgets.</p></article>
+        <article><span class="feature-number">06</span><h3>Optional monitoring</h3><p>Store a small, bounded history locally or keep an ongoing, visible device-status notification that you can stop at any time.</p></article>
+      </div>
+    </section>
+
+    <section class="privacy-panel">
+      <div class="shell privacy-grid">
+        <div>
+          <p class="eyebrow">Privacy architecture</p>
+          <h2>On-device means on-device.</h2>
+        </div>
+        <div class="privacy-points">
+          <p><strong>Zero runtime transmission.</strong> Bubbles has no Internet permission or remote application inventory.</p>
+          <p><strong>Deliberate local retention.</strong> Optional history is bounded and deletable. Operational history is excluded from backup.</p>
+          <p><strong>Progressive access.</strong> Optional notifications are requested only when needed. Storage access begins only after you choose a folder.</p>
+          <p><strong>No hidden control.</strong> No root access, accessibility automation, hidden APIs, silent uninstall, or broad all-files permission.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section final-cta">
+      <div>
+        <p class="eyebrow">Need the details?</p>
+        <h2>Plain-language policies, ready for review.</h2>
+      </div>
+      <div class="link-cards">
+        <a href="privacy.html"><span>Privacy policy</span><small>What is processed and stored</small></a>
+        <a href="data-safety.html"><span>Data Safety</span><small>Google Play disclosure summary</small></a>
+        <a href="support.html"><span>Support</span><small>Help, limitations, and local deletion</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <p><strong>Bubbles App Manager</strong><br><span>Private, honest, and on-device.</span></p>
+      <nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="data-safety.html">Data Safety</a><a href="support.html">Support</a><a href="https://github.com/KernFerm/BubblesAppManager">GitHub</a></nav>
+      <p class="fine-print">Not affiliated with Google, Samsung, Motorola, or any device manufacturer.<br>Last updated November 11, 2026.</p>
+    </div>
+  </footer>
+</body>
+</html>

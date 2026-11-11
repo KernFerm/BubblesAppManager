@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Google Play Data Safety summary for Bubbles App Manager.">
+  <meta name="theme-color" content="#15111d">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="canonical" href="https://kernferm.github.io/BubblesAppManager/data-safety.html">
+  <link rel="stylesheet" href="styles.css">
+  <title>Data Safety · Bubbles App Manager</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="./" aria-label="Bubbles App Manager home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Bubbles</span></a><nav aria-label="Primary navigation"><a href="./">Overview</a><a href="privacy.html">Privacy</a><a aria-current="page" href="data-safety.html">Data safety</a><a href="support.html">Support</a></nav></header>
+  <main id="main" class="policy shell">
+    <header class="policy-hero"><p class="eyebrow">Google Play disclosure summary</p><h1>Data Safety</h1><p class="lede">The current application does not collect or share user data because information processed by Bubbles does not leave the device.</p></header>
+
+    <section class="safety-summary" aria-label="Data Safety summary"><div><span>Data collected</span><strong>None transmitted</strong></div><div><span>Data shared</span><strong>None</strong></div><div><span>Advertising</span><strong>None</strong></div><div><span>Accounts</span><strong>None</strong></div></section>
+
+    <section><h2>What stays on your device</h2><div class="table-wrap"><table><thead><tr><th>Information</th><th>Purpose</th><th>Retention and control</th></tr></thead><tbody><tr><td>Discoverable app metadata and icons</td><td>Application management</td><td>Scanned locally; favorites persist until removed or app data is cleared</td></tr><tr><td>RAM, storage, battery, and thermal measurements</td><td>Dashboard, widgets, and optional monitoring</td><td>Current values in memory; optional bounded history is deletable</td></tr><tr><td>Preferences</td><td>Themes, widgets, and feature choices</td><td>Local DataStore; may use Android encrypted backup</td></tr><tr><td>Authorized folder URI and file metadata</td><td>User-requested storage review</td><td>Local only; folder access can be forgotten</td></tr><tr><td>Locally computed file hashes</td><td>Byte-identical duplicate detection</td><td>Used locally for the active scan; never transmitted</td></tr></tbody></table></div></section>
+
+    <section><h2>Security and deletion</h2><p>Bubbles uses scoped Android APIs, explicit system intents, immutable PendingIntents, a protected widget receiver, a non-exported foreground service, and no cleartext or runtime network traffic. You can delete history and folder access inside the app. Android’s Clear storage or Uninstall actions remove application-local data, subject to Android backup restoration.</p></section>
+
+    <section><h2>Important scope</h2><p>This page describes version 1.0.0 and the verified dependency set as of November 11, 2026. If network, analytics, advertising, accounts, or transmitting third-party SDKs are introduced, this disclosure and the Play Console Data Safety form must be updated before release.</p><p>For the complete legal disclosure, read the <a href="privacy.html">Privacy Policy</a>.</p></section>
+  </main>
+  <footer><div class="shell footer-grid"><p><strong>Bubbles App Manager</strong><br><span>Private, honest, and on-device.</span></p><nav aria-label="Footer navigation"><a href="./">Overview</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav><p class="fine-print">Last reviewed November 11, 2026.</p></div></footer>
+</body>
+</html>
